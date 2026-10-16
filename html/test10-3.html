@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앵커 태그 3단계 - 링크 메뉴와 스타일</title>
+    <link rel="stylesheet" href="../css/test10-3.css"
+</head>
+
+<body>
+    <!-- 상단메뉴 -->
+    <nav>
+        <ul>
+            <li><a href="#intro">소개</a></li>
+            <li><a href="#course">교육과정</a></li>
+            <li><a href="#contact">문의</a></li>
+            <li><a href="/html/test10-2.html">2단계로</a></li>
+        </ul>
+    </nav>
+
+    <section id="intro" class="content">
+    <h1>앵커 태그 3단게 : 링크 메뉴와 스타일</h1>
+    <P>위 메뉴를 클릭하면 해당 섹션으로 부드럽게 이동하고, 섹션의 배경색이 바뀝니다. </P>
+    <p>
+        링크상태 확인:
+        <a href="https://www.naver.com" target="_blank" rel="noopener noreferrer">네이버</a>
+        <a href="https://www.daum.com" target="_blank" rel="noopener noreferrer">다음</a>
+    </p>
+    </section>
+
+    <section id="course" class="content">
+        <h2>교육과정</h2>
+        <ul>
+            <li><a href="#course">HTML5</a></li>
+            <li><a href="#course">CSS3 스타일링</a></li>
+            <li><a href="#course">JavaScript 입문</a></li>
+        </ul>
+        <P><a href="contact" class="ctn">수강 신청하기</a></P>
+    </section>
+    <h1>앵커 태그 3단게 : 링크 메뉴와 스타일</h1>
+    <P>위 메뉴를 클릭하면 해당 섹션으로 부드럽게 이동하고, 섹션의 배경색이 바뀝니다. </P>
+
+    <section id="contact" class="content">
+        <h2>문의</h2>
+        <p><a href="mailto:ye37505ye@gmail.com?subject=수강%20문의" class="btn">✉ 이메일 문의 ✉</a></p>
+        <p><a href="tel:010-5954-4472" class="btn">📞 전화 문의 📞</a></p>
+        <p><a href="#intro">⬆ 맨위로 이동!</a></p>
+    </section>
+</body>
+
+</html>
