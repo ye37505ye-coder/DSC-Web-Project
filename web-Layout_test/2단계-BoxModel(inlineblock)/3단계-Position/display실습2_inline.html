@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-box</title>
+    <style>
+        /* 웹페이지 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+span.inline-box{
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            width: 200px;
+            height: 50px;
+            /* inline 태그는 높이와 넓이 적용x */
+             }
+
+    </style>
+</head>
+<body>
+    <h2>Inline</h2>
+    <span class="inline-box">span태그란? 블록요소에 또다른 요소를 추가시 활용!</span>
+    <span class="inline-box">span태그</span>
+    <span class="inline-box">span태그</span>
+<!-- 결과: 나란히 배치, winth / hegiht 무시됨! -->
+
+</body>
+</html>

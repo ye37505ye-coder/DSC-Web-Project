@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box_model_실습2</title>
+    <style>
+        /* 웹페이지 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div.box2 {
+            width: 200px;
+            height: 100px;
+            background-color: #e74c3c;
+            color: white;
+            margin-bottom: 20px;
+        
+        /* padding 적용후 비교 */
+        padding: 20px;
+
+        /* content-box 속성과 border-box번갈아가며 적용하기 */
+        /* f12번을 통해서가로 크기를 확인한다 */
+        box-sizing: content-box;
+        }
+
+        div.box2-1 {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            /* margin-top: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box2">padding 적용박스2</div>
+    <div class="box2-1">padding 적용박스2-1</div>
+
+</body>
+
+</html>

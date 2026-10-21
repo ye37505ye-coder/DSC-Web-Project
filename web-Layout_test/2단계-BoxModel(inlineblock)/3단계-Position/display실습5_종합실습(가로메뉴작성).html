@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display 실습5-종합실습(가로메뉴작성)</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+        margin: 0px;
+        padding: 20px;
+
+        font-family: "맑은 고딕", sans-serif;
+        }
+
+        /* 메뉴 전체를 감싸고 있는 div.menu 스타일 적용 */
+        div.menu{
+        background-color: #2c3e50;
+        padding: 10px;
+        text-align: center;
+
+        
+        }
+
+        /* 개별 가로메뉴인 span태그 속성 적용 */
+        span.menu-item{
+        display: inline-block;
+        color: white;
+        padding: 5px 20px;
+
+        /* 눈으로 테두리선 확인하기 */
+        /* border: 1px dotted white; */
+
+        width: 115px;
+        margin: 0px 5px;
+        font-size: 15px;
+        }
+
+        /* span태그 메뉴에 효과 적용 */
+        span.menu-item:hover{
+        cursor: pointer;
+        background-color: #3498db;
+        color: black;
+        border-radius: 15px;
+        font-weight: bold;
+        }
+
+        div.content{
+        width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>📌display:"inline-block"으로 가로 메뉴 만들기 </h2>
+
+    <!-- 가로 메뉴 -->
+    <div class="menu">
+        <span  class="menu-item">홈</span>
+        <span class="menu-item">소개</span>
+        <span class="menu-item">서비스</span>
+        <span class="menu-item">포트폴리오</span>
+        <span class="menu-item">연락처</span>
+    </div>
+
+    <!-- 내용 영역 -->
+    <div class="content">
+        <h3>✅학습 포인트</h3>
+        <p>span 태그는 기본적으로 <strong> inline</strong> 속성입니다.<br> <code>display:"inline-block"</code>을 적용하면<br>
+            나란히 배치 + 크기/여백 지정이 모두 가능합니다.
+        </p>
+    </div>
+</body>
+
+</html>
